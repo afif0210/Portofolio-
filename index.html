@@ -8,10 +8,11 @@
   <title>Abdurrahman Afif — Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="linkfavicon" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -21,7 +22,9 @@
 
   <div class="loader-content">
 
-    <h1 class="loader-logo">AF<span>.</span></h1>
+    <div class="loader-logo">
+   <img src="./images/Analysis output 1.png" alt="AF Logo">
+  </div>
 
     <p class="loader-name">ABDURRAHMAN AFIF</p>
 
@@ -45,7 +48,9 @@
 
   <!-- NAVBAR -->
   <header class="navbar">
-    <a href="#home" class="logo">AF<span>.</span></a>
+    <a href="#" class="navbar-logo">
+  <img src="./images/Analysis output 1.png" alt="AF Logo">
+    </a>
 
     <nav class="nav-menu">
       <a href="#home" class="nav-link active">Home</a>
@@ -134,84 +139,139 @@
   </main>
 
 
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
 <section class="about-section" id="about">
 
-  <!-- Dekorasi -->
-  <div class="about-cross">+</div>
+  
 
-  <!-- Kolom kiri -->
-  <div class="about-left reveal">
-    <span class="about-greeting">Hey, I am</span>
+  <!-- ABOUT CONTENT -->
+  <div class="about-container">
 
-    <h2>
-      Abdurrahman
-      <span>Afif</span>
-    </h2>
+    <!-- LEFT COLUMN -->
+    <div class="about-left reveal">
 
-    <a href="#contact" class="about-contact">
-      Contact Me <span>↗</span>
-    </a>
-
-    <div class="about-social">
-      <p>my socials</p>
-
-      <div class="social-links">
-        <a href="#" target="_blank">LinkedIn</a>
-        <a href="#" target="_blank">Instagram</a>
-        <a href="#" target="_blank">Github</a>
+      <div class="about-name">
+        <h2>Abdurrahman<br>Afif</h2>
       </div>
-    </div>
-  </div>
 
-  <!-- Foto tengah -->
-  <div class="about-center reveal">
-    <div class="about-circle"></div>
-    <div class="about-orbit"></div>
+      <a href="#contact" class="about-contact-btn">
+        <span>Contact Me</span>
+        <span>↗</span>
+      </a>
 
-    <img
-      src="./images/IMG_4370 (1).jpg"
-      alt="Portrait of Abdurrahman Afif"
-      class="about-photo"
-    />
-  </div>
+      <div class="about-socials">
+        <p>my socials</p>
 
-  <!-- Kolom kanan -->
-  <div class="about-right reveal">
-    <span class="about-role">WEB DEVELOPER</span>
+        <div class="social-links">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Github</a>
+        </div>
+      </div>
 
-    <h3>
-      Creative<br />
-      Developer
-    </h3>
-
-    <p class="about-description">
-      I'm Abdurrahman Afif, a curious mind who loves
-      exploring ideas and creating things through
-      technology. I enjoy learning new things and
-      turning ideas into digital experiences.
-    </p>
-
-    <div class="about-skills">
-      <div><span>+</span> Web Development</div>
-      <div><span>+</span> UI/UX Design</div>
-      <div><span>+</span> Sports & Football</div>
-    </div>
-  </div>
-
-  <!-- Footer section -->
-  <div class="about-footer">
-    <div class="footer-left">
-      <span>02</span>
-      <div></div>
-      <p>GET TO KNOW ME</p>
     </div>
 
-    <a href="#projects" class="scroll-down">
-      SCROLL DOWN <span>↓</span>
-    </a>
+    <!-- CENTER COLUMN -->
+    <div class="about-center reveal">
+
+      <div class="about-image-wrapper">
+        <div class="about-orbit"></div>
+
+        <div class="about-image">
+          <img
+            src="./images/IMG_4370 (1).jpg"
+            alt="Abdurrahman Afif"
+          >
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="about-right reveal">
+
+      <span class="about-label">WHO I AM</span>
+
+      <h2>Developer</h2>
+
+      <p class="about-description">
+        I'm Abdurrahman Afif, a curious mind
+        who loves exploring ideas and
+        creating things through technology.
+        I enjoy learning new things and
+        turning ideas into digital
+        experiences.
+      </p>
+
+      <div class="about-focus">
+
+        <div class="focus-item">
+          <span>+</span>
+          <p>Web Development</p>
+        </div>
+
+        <div class="focus-item">
+          <span>+</span>
+          <p>UI/UX Design</p>
+        </div>
+
+        <div class="focus-item">
+          <span>+</span>
+          <p>Sports & Football</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  </div>
+
+  <!-- ABOUT MARQUEE -->
+  <div class="about-marquee">
+
+    <div class="about-marquee-track">
+
+      <span>SANTRI JAGO CODING</span>
+      <span class="marquee-symbol">✳</span>
+
+      <span>SANTRI JAGO CODING</span>
+      <span class="marquee-symbol">✳</span>
+
+      <span>SANTRI JAGO CODING</span>
+      <span class="marquee-symbol">✳</span>
+
+      <span>SANTRI JAGO CODING</span>
+      <span class="marquee-symbol">✳</span>
+
+    </div> 
+
+  <!-- ABOUT FOOTER -->
+  <div class="about-bottom reveal ">
+
+    <div class="about-bottom-left">
+      <span class="about-number">02</span>
+      <span class="about-line"></span>
+      <span>GET TO KNOW ME</span>
+    </div>
+
+    <div class="about-bottom-right">
+      <span>SCROLL DOWN</span>
+      <span>↓</span>
+    </div>
+
   </div>
 
 </section>
+
+<!-- END ABOUT SECTION -->
+
 
 
 <!-- PROJECTS SECTION -->
@@ -301,32 +361,52 @@
     </article>
 
     <!-- PROJECT 03 -->
-    <article class="project-card coming-card project-reveal">
+  
+<!-- PROJECT 03 - HAVZA STORE -->
 
-      <div class="coming-visual">
-        <span class="coming-plus">+</span>
-        <span class="coming-text">SOMETHING<br>NEW IS COMING</span>
-        <span class="coming-number">03</span>
-      </div>
+<article class="project-card project-reveal">
 
-      <div class="project-info">
-        <div>
-          <span class="project-number">03 / UPCOMING PROJECT</span>
-          <h3>Coming Soon.</h3>
-          <p>
-            New ideas are currently in progress.
-            Stay tuned for the next creation.
-          </p>
-        </div>
+  <div class="project-image">
 
-        <span class="project-year">TBA</span>
-      </div>
+    <img
+      src="./images/Ecommerce.png"
+      alt="HAVZA STORE Ecommerce Website"
+    >
 
-      <div class="project-tags">
-        <span>IN PROGRESS</span>
-      </div>
+    <a href="#" class="project-open" target="_blank">
+      ↗
+    </a>
 
-    </article>
+  </div>
+
+  
+<div class="project-info">
+
+  <div>
+    <span class="project-number">
+      03 / WEB DEVELOPMENT
+    </span>
+
+    <h3>HAVZA STORE</h3>
+
+    <p>
+      An e-commerce website concept designed
+      for a modern fashion and clothing store.
+    </p>
+  </div>
+
+  <span class="project-year">2026</span>
+
+</div>
+
+  <div class="project-tags">
+    <span>ECOMMERCE</span>
+    <span>WEB DESIGN</span>
+    <span>UI/UX</span>
+  </div>
+
+</article>
+
 
   </div>
 
@@ -449,12 +529,186 @@
     <span>MORE SKILLS TO COME ↗</span>
   </div>
 
+
+<!-- SKILLS MARQUEE -->
+<div class="skills-marquee">
+  <div class="skills-marquee-track">
+
+    <span>LEARN</span>
+    <span class="marquee-star">✳</span>
+    <span>CREATE</span>
+    <span class="marquee-star">✳</span>
+    <span>INNOVATE</span>
+    <span class="marquee-star">✳</span>
+    <span>REPEAT</span>
+    <span class="marquee-star">✳</span>
+
+    <span>LEARN</span>
+    <span class="marquee-star">✳</span>
+    <span>CREATE</span>
+    <span class="marquee-star">✳</span>
+    <span>INNOVATE</span>
+    <span class="marquee-star">✳</span>
+    <span>REPEAT</span>
+    <span class="marquee-star">✳</span>
+
+  </div>
+</div>
+
 </section>
 
 <!-- END SKILLS SECTION -->
 
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section class="contact-section" id="contact">
+
+  <div class="contact-top">
+    <span>05 / GET IN TOUCH</span>
+    <span>HAVE A PROJECT IN MIND?</span>
+  </div>
+
+  <div class="contact-main">
+
+    <p class="contact-small-text">LET'S CREATE SOMETHING</p>
+
+    <h2 class="contact-title">
+      GREAT
+      <span>TOGETHER<span class="contact-dot">.</span></span>
+    </h2>
+
+    <div class="contact-description">
+      <p>
+        Have an idea, a project, or just want to say hello?
+        Feel free to reach out. I'm always open to new
+        opportunities and collaborations.
+      </p>
+    </div>
+
+    <a href="mailto:your-email@example.com" class="contact-button">
+      <span>LET'S TALK</span>
+      <span class="contact-button-arrow">↗</span>
+    </a>
+
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="contact-marquee">
+    <div class="marquee-track">
+      <span>LET'S BUILD SOMETHING GREAT</span>
+      <span class="marquee-star">✳</span>
+      <span>LET'S BUILD SOMETHING GREAT</span>
+      <span class="marquee-star">✳</span>
+    </div>
+  </div>
+
+  <!-- SOCIAL LINKS -->
+  <div class="contact-socials">
+
+    <div class="contact-social-heading">
+      <span>FIND ME ON</span>
+      <span>ELSEWHERE ↘</span>
+    </div>
+
+    <a href="#" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+      <span>01</span>
+      <h3>GITHUB</h3>
+      <span class="social-arrow">↗</span>
+    </a>
+
+    <a href="#" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+      <span>02</span>
+      <h3>INSTAGRAM</h3>
+      <span class="social-arrow">↗</span>
+    </a>
+
+    <a href="#" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+      <span>03</span>
+      <h3>LINKEDIN</h3>
+      <span class="social-arrow">↗</span>
+    </a>
+
+  </div>
+
+  <div class="contact-footer">
+    <span>AF. — ABDURRAHMAN AFIF</span>
+    <span>DESIGNED & DEVELOPED WITH CREATIVITY.</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </div>
+
+</section>
+
+<!-- END CONTACT SECTION -->
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="main-footer">
+
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <a href="#home" class="footer-logo">AF<span>.</span></a>
+
+      <p>
+        A SANTRI WHO LOVES<br>
+        TO BUILD DIGITAL THINGS.
+      </p>
+    </div>
+
+    <div class="footer-navigation">
+
+      <div class="footer-column">
+        <span class="footer-heading">NAVIGATION</span>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <span class="footer-heading">SOCIALS</span>
+
+        <a href="#" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-big-text">
+    THANK YOU<span>.</span>
+  </div>
+
+  <div class="footer-bottom">
+
+    <span>© 2026 ABDURRAHMAN AFIF</span>
+
+    <span>DESIGNED & DEVELOPED BY AF.</span>
+
+    <a href="#home" class="back-to-top">
+      BACK TO TOP ↑
+    </a>
+
+  </div>
+
+</footer>
+
+<!-- END FOOTER -->
+
+
 <!-- JavaScript -->
-<script src="script.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>
 

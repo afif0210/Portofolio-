@@ -1,3 +1,4 @@
+
 // =========================
 // MOBILE NAVIGATION
 // =========================
@@ -334,4 +335,93 @@ particleSkillCards.forEach((card) => {
 
   });
 });
+/* =========================
+   HERO TYPING ANIMATION
+========================= */
 
+const typingText = document.querySelector(".typing-text");
+
+const words = [
+  "I'm a Front end Developer",
+  "I'm a Creative designer",
+  "I'm a Web Designer"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentWord = words[wordIndex];
+
+  if (isDeleting) {
+    charIndex--;
+  } else {
+    charIndex++;
+  }
+
+  typingText.textContent = currentWord.substring(0, charIndex);
+
+  let speed = isDeleting ? 45 : 90;
+
+  if (!isDeleting && charIndex === currentWord.length) {
+    speed = 1500;
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+    speed = 400;
+  }
+
+  setTimeout(typeEffect, speed);
+}
+
+if (typingText) {
+  typeEffect();
+}
+/* =========================
+   HERO CURSOR GLOW
+========================= */
+
+const heroSection = document.querySelector(".hero");
+const heroGlow = document.querySelector(".hero-glow");
+
+if (heroSection && heroGlow) {
+
+  heroSection.addEventListener("mousemove", (e) => {
+    const rect = heroSection.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    heroGlow.style.left = `${x}px`;
+    heroGlow.style.top = `${y}px`;
+    heroGlow.style.opacity = "1";
+  });
+
+  heroSection.addEventListener("mouseleave", () => {
+    heroGlow.style.opacity = "0";
+  });
+
+}
+/* =========================
+   MAGNETIC BUTTON
+========================= */
+
+const magneticBtn = document.querySelector(".explore-btn");
+
+if (magneticBtn) {
+  magneticBtn.addEventListener("mousemove", (e) => {
+    const rect = magneticBtn.getBoundingClientRect();
+
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    magneticBtn.style.transform =
+      `translate(${x * 0.15}px, ${y * 0.15}px)`;
+  });
+
+  magneticBtn.addEventListener("mouseleave", () => {
+    magneticBtn.style.transform = "translate(0, 0)";
+  });
+}

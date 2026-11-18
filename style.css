@@ -3625,5 +3625,234 @@ header.navbar .navbar-logo img {
     animation: none;
   }
 }
+.hero {
+  min-height: calc(100vh - 85px);
+  padding: 55px 7% 35px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  text-align: center;
+}
+
+/* =========================
+   HERO SECTION - CLEAN CENTER
+========================= */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.hero-heading {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading-small {
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.main-title {
+  width: 100%;
+  text-align: center;
+}
+
+.title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero-description {
+  width: 100%;
+  max-width: 850px;
+  margin: 35px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-description p {
+  text-align: left;
+}
+/* TYPING ANIMATION */
+
+.typing-wrapper {
+  margin-top: 15px;
+  min-height: 45px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #6C8CFF;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.typing-cursor {
+  display: inline-block;
+  color: #6C8CFF;
+  animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .typing-wrapper {
+    font-size: 18px;
+  }
+}
+/* =========================
+   ABOUT SECTION - COOL GRAY
+========================= */
+
+#about {
+  background-color: #F0F1F5;
+  color: #111111;
+}
+
+#about h1,
+#about h2,
+#about h3,
+#about p,
+#about span {
+  color: #111111;
+}
+/* =========================
+   ABOUT PROFILE IMAGE
+========================= */
+
+.about-image-wrapper {
+  width: 100%;
+  max-width: 370px;
+  aspect-ratio: 4 / 5;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-orbit {
+  width: 115%;
+}
+/* FIX ABOUT MARQUEE TEXT */
+
+.about-marquee-track span {
+  color: #FFFFFF !important;
+}
+
+.about-marquee-track .marquee-symbol {
+  color: #6C8CFF !important;
+}
+/* =========================
+   HERO INTERACTIVE GLOW
+========================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+
+  background: radial-gradient(
+    circle,
+    rgba(108, 140, 255, 0.18) 0%,
+    rgba(108, 140, 255, 0.07) 40%,
+    transparent 70%
+  );
+
+  border-radius: 50%;
+  pointer-events: none;
+
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* =========================
+   HERO TEXT REVEAL
+========================= */
+
+.hero .reveal-text,
+.hero .title-line,
+.hero .hero-description {
+  opacity: 0;
+  transform: translateY(35px);
+  animation: heroTextReveal 0.9s ease forwards;
+}
+
+.hero .reveal-text {
+  animation-delay: 0.2s;
+}
+
+.hero .title-line:first-child {
+  animation-delay: 0.4s;
+}
+
+.hero .title-second {
+  animation-delay: 0.6s;
+}
+
+.hero .hero-description {
+  animation-delay: 0.9s;
+}
+
+@keyframes heroTextReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* =========================
+   MAGNETIC BUTTON
+========================= */
+
+.explore-btn {
+  position: relative;
+  display: inline-flex;
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
